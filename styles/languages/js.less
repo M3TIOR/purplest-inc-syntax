@@ -1,0 +1,70 @@
+/**
+ * js.less
+ * ----------------------------------------------------------------------------
+ * Styles for CoffeeScript & JavaScript syntax within the Atom text editor.
+ *
+ * Purplest, Inc. Syntax [1.0.0]
+ * (https://github.com/PurplestInc/purplest-inc-syntax/styles/languages/js.less)
+ *
+ * Maintained by: Purplest, Inc.
+ * (https://github.com/PurplestInc)
+ * (https://github.com/RobDukarski)
+ *
+ * @version 1.0.0 (06/02/16)
+ * @license MIT
+ * @copyright (c) 2016 Purplest, Inc.
+ * (https://purplest.com)
+ * ============================================================================
+ */
+
+// CoffeeScript/JavaScript
+
+.source.coffee,
+.source.js {
+  color: @syntax-variable;
+
+  .assignment {
+    color: @syntax-assignment;
+  }
+
+  .class {
+    color: @syntax-class;
+
+    & + .period + .function {
+      color: @syntax-function;
+    }
+  }
+
+  .console.type {
+    color: @syntax-console;
+  }
+
+  .function.entity.name {
+    color: @syntax-function;
+  }
+
+  .keyword,
+  .storage.type {
+    color: @syntax-constant;
+  }
+
+  .operator {
+    color: @syntax-operator;
+  }
+
+  .string {
+    color: @light-base;
+
+    &.definition.punctuation {
+      color: @syntax-string-definition;
+    }
+
+    .embedded.source {
+      color: @syntax-embedded;
+    }
+  }
+
+  .variable.parameter.function {
+    color: @syntax-text-color;
+  }
+}

@@ -1,0 +1,51 @@
+/**
+ * json.less
+ * ----------------------------------------------------------------------------
+ * Styles for JSON syntax within the Atom text editor.
+ *
+ * Purplest, Inc. Syntax [1.0.0]
+ * (https://github.com/PurplestInc/purplest-inc-syntax/styles/languages/json.less)
+ *
+ * Maintained by: Purplest, Inc.
+ * (https://github.com/PurplestInc)
+ * (https://github.com/RobDukarski)
+ *
+ * @version 1.0.0 (06/02/16)
+ * @license MIT
+ * @copyright (c) 2016 Purplest, Inc.
+ * (https://purplest.com)
+ * ============================================================================
+ */
+
+// JSON
+
+.source.json {
+  .constant.language {
+    color: @bright-base;
+  }
+
+  .punctuation {
+    color: @syntax-text-color;
+  }
+
+  .string {
+    color: @light-base;
+
+    .definition {
+      color: @syntax-string-definition;
+    }
+
+    & + .structure.dictionary.value .string {
+      color: @brighter-base;
+    }
+  }
+
+  .structure.array .string,
+  .structure.dictionary.value .structure.dictionary .string {
+    color: @brightest-base;
+  }
+
+  .structure.dictionary.value .structure.dictionary .string + .structure.dictionary.value .string  {
+    color: @brighter-base;
+  }
+}

@@ -1,0 +1,67 @@
+/**
+ * html.less
+ * ----------------------------------------------------------------------------
+ * Styles for HTML & XML syntax within the Atom text editor.
+ *
+ * Purplest, Inc. Syntax [1.0.0]
+ * (https://github.com/PurplestInc/purplest-inc-syntax/styles/languages/html.less)
+ *
+ * Maintained by: Purplest, Inc.
+ * (https://github.com/PurplestInc)
+ * (https://github.com/RobDukarski)
+ *
+ * @version 1.0.0 (06/02/16)
+ * @license MIT
+ * @copyright (c) 2016 Purplest, Inc.
+ * (https://purplest.com)
+ * ============================================================================
+ */
+
+// HTML/XML
+
+.source.html,
+.source.xml,
+.text.html,
+.text.xml {
+  color: @syntax-text-color;
+
+  .comment {
+    color: @comments;
+  }
+
+  .entity {
+    &.name.tag {
+      text-decoration: done;
+
+      &.block,
+      &.inline,
+      &.structure {
+        color: @syntax-tag;
+      }
+   }
+
+    &.other {
+       &.attribute-name {
+        color: @syntax-element-attr;
+       }
+    }
+  }
+
+  .meta {
+    &.tag {
+      .other {
+        &.attribute-name {
+          color: @syntax-element-attr;
+        }
+      }
+    }
+  }
+
+  .punctuation.definition.tag {
+    color: @syntax-tag-definition;
+  }
+
+  .string {
+    color: @syntax-string;
+  }
+}

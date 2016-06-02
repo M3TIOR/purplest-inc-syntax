@@ -1,0 +1,99 @@
+/**
+ * java.less
+ * ----------------------------------------------------------------------------
+ * Styles for JAVA syntax within the Atom text editor.
+ *
+ * Purplest, Inc. Syntax [1.0.0]
+ * (https://github.com/PurplestInc/purplest-inc-syntax/styles/languages/java.less)
+ *
+ * Maintained by: Purplest, Inc.
+ * (https://github.com/PurplestInc)
+ * (https://github.com/RobDukarski)
+ *
+ * @version 1.0.0 (06/02/16)
+ * @license MIT
+ * @copyright (c) 2016 Purplest, Inc.
+ * (https://purplest.com)
+ * ============================================================================
+ */
+
+// JAVA
+
+.source.java {
+  .class > .modifier:first-child,
+  .method > .modifier.storage {
+    color: @syntax-tag;
+  }
+
+  .entity.name.type,
+  .entity.inherited-class {
+    color: @brighter-base;
+  }
+
+  .keyword {
+    color: @syntax-keyword;
+  }
+
+  .keyword.operator {
+    color: @syntax-operator;
+  }
+
+  .meta.identifier,
+  .meta.implemented,
+  .meta.inherited, {
+    .storage.modifier {
+      color: @syntax-identifier;
+    }
+  }
+
+  .meta.identifier {
+    color: @syntax-text-color;
+  }
+
+  .meta.variable.name {
+    color: @syntax-identifier;
+  }
+
+  .method {
+    color: @brightest-base;
+  }
+
+  .method.body {
+    color: @brighter-base;
+  }
+
+  .punctuation.definition,
+  .punctuation.section,
+  .variable.definition {
+    color: @syntax-text-color;
+  }
+
+  .return-type {
+    .storage.type {
+      color: @syntax-type;
+    }
+  }
+
+  .storage.modifier,
+  .storage.modifier ~ .storage.modifier {
+    color: @syntax-type;
+  }
+
+  .storage.type {
+    color: @base;
+  }
+
+  .storage.type.generic {
+    color: @syntax-identifier;
+
+    .storage.type {
+      color: @syntax-type;
+    }
+  }
+
+  .string {
+    .definition {
+      color: @syntax-string-definition;
+    }
+  }
+}

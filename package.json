@@ -1,0 +1,18 @@
+{
+  "name": "purplest-inc-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Purplest, Inc. Syntax - A purple syntax theme for the Atom text editor.",
+  "keywords": [
+    "purplestinc",
+    "light",
+    "purple",
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/PurplestInc/purplest-inc-syntax",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
